@@ -18,7 +18,7 @@
   - [ ] restart button
   - [ ] separate 'restart-btn' branch:
     - [ ] component restart-btn.js: return `<button>`
-    - [ ] handler restart.js (append listener)
+    - [ ] handler restart-quiz.js (append listener)
     - [ ] update state: reset state, all previously answered cleared
     - [ ] add the button to quiz and home page
     - [ ] css
