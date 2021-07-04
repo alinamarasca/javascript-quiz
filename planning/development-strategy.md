@@ -45,7 +45,7 @@
   - [ ] component score.js: returns `<p>` (~Congratulations, blah blah + get amount of questions from the state, no hard code)
   - [ ] css
   
-## Should-Haves
+# Should-Haves
 
 - **Quiz Page**
   - [ ] a user can see how far they are through the quiz
