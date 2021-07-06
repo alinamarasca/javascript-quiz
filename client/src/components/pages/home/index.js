@@ -12,8 +12,13 @@ import { n_questions } from "./n_questions.js";
 export const home = () => {
   const container = document.createElement("div");
   container.className = "body";
-  container.innerHTML = "home: ";
+  container.innerHTML = "";
 
+  const head_ing = document.createElement("h1");
+  head_ing.innerHTML = "JavaScript Quiz Test";
+  head_ing.classList = "title";
+
+  container.appendChild(head_ing);
   container.appendChild(makeInstructions());
   container.appendChild(restartButton());
   container.appendChild(inputGreeting());
