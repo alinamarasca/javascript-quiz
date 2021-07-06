@@ -10,10 +10,8 @@ import { renderQuiz } from "./render-quiz.js";
 export const quiz = () => {
   const container = document.createElement("div");
   container.className = "body";
-
   container.appendChild(renderQuiz(0));
   container.appendChild(restartButton());
   // container.appendChild(inputGreeting());
-
   return container;
 };
