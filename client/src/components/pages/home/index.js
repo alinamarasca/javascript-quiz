@@ -1,3 +1,5 @@
+/* eslint-disable spellcheck/spell-checker */
+/* eslint-disable camelcase */
 /* eslint-disable prettier/prettier */
 import { inputGreeting } from "../../shared/input-greeting.js";
 import { restartButton } from "../../shared/restart-btn.js";

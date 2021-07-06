@@ -1,3 +1,4 @@
+/* eslint-disable spellcheck/spell-checker */
 /* eslint-disable prettier/prettier */
 /* eslint-disable camelcase */
 /* eslint-disable prettier/prettier */
