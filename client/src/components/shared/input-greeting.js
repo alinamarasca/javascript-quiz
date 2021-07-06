@@ -1,5 +1,4 @@
 import { state } from "../../init/state.js";
-
 import { changeGreeting } from "../../handlers/change-greeting.js";
 import { reverse } from "../../logic/reverse.js";
 
@@ -13,7 +12,7 @@ export const inputGreeting = () => {
   input.addEventListener("keyup", changeGreeting);
 
   const container = document.createElement("div");
-  container.appendChild(input);
-  container.appendChild(mirror);
+  // container.appendChild(input);
+  // container.appendChild(mirror);
   return container;
 };
