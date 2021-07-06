@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { inputGreeting } from "../../shared/input-greeting.js";
 import { restartButton } from "../../shared/restart-btn.js";
 import { makeInstructions } from "./instructions.js";

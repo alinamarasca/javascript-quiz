@@ -1,3 +1,6 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable camelcase */
+/* eslint-disable prettier/prettier */
 import { n_questions } from "./n_questions.js";
 
 export const makeInstructions = () => {
