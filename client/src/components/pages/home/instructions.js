@@ -11,6 +11,5 @@ export const makeInstructions = () => {
   Keep in mind multiple choice is possible.
   There is no time limit. You can restart and do the test as many times as you want.
   Good luck!`;
-  ;
   return instructions;
 };
