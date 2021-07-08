@@ -1,4 +1,5 @@
 import { data } from "../../../../data/quiz.js";
+import { CheckAnswer } from "../../../handlers/answer-question.js"
 
 const RenderQuiz = (questionIndex) => {
   const quizContainer = document.createElement("div");
@@ -13,6 +14,7 @@ const RenderQuiz = (questionIndex) => {
     const checkbox = document.createElement("input");
     checkbox.setAttribute("type", "checkbox");
     li.insertAdjacentElement("afterbegin", checkbox);
+    checkbox.addEventListener("change", CheckAnswer);
     answers.appendChild(li);
   }
   quizContainer.appendChild(questions);
