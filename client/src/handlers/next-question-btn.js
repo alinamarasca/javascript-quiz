@@ -1,17 +1,13 @@
-export const nextQuestionButton = (questions) => {
-console.log('next question please');
+import { data } from "../../data/quiz.js";
+import { RenderQuiz } from "../components/pages/quiz/render-quiz.js";
 
-// const question = state.question[i]
-
-// if (target.nodeName === "BUTTON") {
-// event target button 
-// clear div
-// displayQuestion(question);
-// i++
-//     /*
-//     take same index as on the screen,
-//      changes data, 
-//      click i++ switch to the next
-//     */
-
+export const nextQuestionButton = () => {
+  const parent = document.querySelector(".quiz-container");
+  parent.textContent = "";
+  data.currentQuestion += 1;
+  parent.appendChild(RenderQuiz(data.currentQuestion));
+  const endOfQuiz = data.questions.length;
+  if (data.currentQuestion + 1 === endOfQuiz) {
+    data.currentQuestion = 0;
 }
+};
