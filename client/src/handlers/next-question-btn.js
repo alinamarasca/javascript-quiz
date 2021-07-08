@@ -9,5 +9,5 @@ export const nextQuestionButton = () => {
   const endOfQuiz = data.questions.length;
   if (data.currentQuestion + 1 === endOfQuiz) {
     data.currentQuestion = 0;
-  }
+}
 };
