@@ -1,4 +1,5 @@
 export const data = {
+  currentQuestion: 0,
   greeting: 'hello',
   questions: [
     {
