@@ -1,11 +1,10 @@
-// render one question of the quiz
 import { data } from "../../../../data/quiz.js";
 
-const renderQuiz = (index) => {
+const RenderQuiz = (questionIndex) => {
   const quizContainer = document.createElement("div");
   quizContainer.className = "quiz-container";
   const questions = document.createElement("p");
-  const currentQuestion = data.questions[index];
+  const currentQuestion = data.questions[questionIndex];
   questions.innerText = currentQuestion.question;
   const answers = document.createElement("ul");
   for (const item of currentQuestion.answers) {
@@ -18,9 +17,7 @@ const renderQuiz = (index) => {
   }
   quizContainer.appendChild(questions);
   quizContainer.appendChild(answers);
-
   return quizContainer;
 };
 
-export { renderQuiz };
-
+export { RenderQuiz };

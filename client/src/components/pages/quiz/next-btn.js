@@ -1,6 +1,6 @@
 import { nextQuestionButton } from "../../../handlers/next-question-btn.js";
 
-export const nextButton = () => {
+export const NextButton = () => {
   const button = document.createElement("BUTTON");
   button.innerText = "next";
   button.classList = "next-btn";
