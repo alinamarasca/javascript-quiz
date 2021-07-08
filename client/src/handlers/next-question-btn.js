@@ -3,7 +3,6 @@ import { RenderQuiz } from "../components/pages/quiz/render-quiz.js";
 
 export const nextQuestionButton = () => {
   data.questions[data.currentQuestion].answered = true;
-  console.log(data);
   const parent = document.querySelector(".quiz-container");
   parent.textContent = "";
   data.currentQuestion += 1;
