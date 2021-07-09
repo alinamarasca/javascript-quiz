@@ -30,11 +30,14 @@
       - [index.js](#clientsrccomponentspagesquestionsindexjs)
     - quiz
       - [index.js](#clientsrccomponentspagesquizindexjs)
+      - [next-btn.js](#clientsrccomponentspagesquiznext-btnjs)
+      - [render-quiz.js](#clientsrccomponentspagesquizrender-quizjs)
   - shared
     - [input-greeting.js](#clientsrccomponentssharedinput-greetingjs)
     - [restart-btn.js](#clientsrccomponentssharedrestart-btnjs)
 - handlers
   - [change-greeting.js](#clientsrchandlerschange-greetingjs)
+  - [next-question-btn.js](#clientsrchandlersnext-question-btnjs)
   - [restart-quiz.js](#clientsrchandlersrestart-quizjs)
 - init
   - [index.js](#clientsrcinitindexjs)
@@ -160,6 +163,14 @@ The quiz page.
 
 </details>
 
+<details><summary><a href="../../client/src/components/pages/quiz/next-btn.js" id="clientsrccomponentspagesquiznext-btnjs">../client/src/components/pages/quiz/next-btn.js</a></summary>
+
+</details>
+
+<details><summary><a href="../../client/src/components/pages/quiz/render-quiz.js" id="clientsrccomponentspagesquizrender-quizjs">../client/src/components/pages/quiz/render-quiz.js</a></summary>
+
+</details>
+
 ---
 
 ---
@@ -181,6 +192,10 @@ The quiz page.
 # /handlers
 
 <details><summary><a href="../../client/src/handlers/change-greeting.js" id="clientsrchandlerschange-greetingjs">../client/src/handlers/change-greeting.js</a></summary>
+
+</details>
+
+<details><summary><a href="../../client/src/handlers/next-question-btn.js" id="clientsrchandlersnext-question-btnjs">../client/src/handlers/next-question-btn.js</a></summary>
 
 </details>
 
