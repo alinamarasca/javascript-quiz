@@ -2,10 +2,10 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable camelcase */
 /* eslint-disable prettier/prettier */
-import { n_questions } from "./n_questions.js";
+import { numberOfQuestions } from "./number-of-questions.js";
 
 export const makeInstructions = () => {
-  const p = n_questions();
+  const p = numberOfQuestions();
   const count = p.innerText;
 
   const instructions = document.createElement("SECTION");

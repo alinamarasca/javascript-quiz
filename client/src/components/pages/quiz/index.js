@@ -2,7 +2,7 @@ import { inputGreeting } from "../../shared/input-greeting.js";
 import { restartButton } from "../../shared/restart-btn.js";
 import { RenderQuiz } from "./render-quiz.js";
 import { NextButton } from "./next-btn.js";
-import { data } from "../../../../data/quiz.js";
+import { state } from "../../../init/state.js";
 
 /**
  * The quiz page.
@@ -12,9 +12,21 @@ import { data } from "../../../../data/quiz.js";
 export const quiz = () => {
   const container = document.createElement("div");
   container.className = "body";
-  
-  container.appendChild(RenderQuiz(data.currentQuestion));
-  container.appendChild(NextButton());
+
+  const quizContainer = document.createElement("section");
+  quizContainer.id = "quiz-container";
+  quizContainer.appendChild(RenderQuiz(state.currentQuestion));
+  container.appendChild(quizContainer);
+
+  const rerenderQuiz = () => {
+    // Update the quiz after next has been clicked.
+    const container = document.getElementById("quiz-container");
+    container.innerHTML = "";
+    container.appendChild(RenderQuiz(state.currentQuestion));
+  };
+  const nextButton = NextButton(rerenderQuiz);
+  container.appendChild(nextButton);
+
   container.appendChild(restartButton());
   container.appendChild(inputGreeting());
 

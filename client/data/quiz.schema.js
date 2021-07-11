@@ -11,6 +11,11 @@ export const schema = {
       description: 'a friendly greeting for the user',
     },
 
+    currentQuestion: {
+      type: 'integer',
+      description: 'the current active question in the quiz',
+    },
+
     questions: {
       type: 'array',
       description: 'the array of questions in the quiz',
