@@ -2,6 +2,7 @@ import { inputGreeting } from "../../shared/input-greeting.js";
 import { restartButton } from "../../shared/restart-btn.js";
 import { RenderQuiz } from "./render-quiz.js";
 import { NextButton } from "./next-btn.js";
+import { BackButton } from "./back-btn.js";
 import { state } from "../../../init/state.js";
 
 /**
@@ -24,10 +25,14 @@ export const quiz = () => {
     container.innerHTML = "";
     container.appendChild(RenderQuiz(state.currentQuestion));
   };
+
+  const backButton = BackButton(rerenderQuiz);
+  container.appendChild(backButton);
+
   const nextButton = NextButton(rerenderQuiz);
   container.appendChild(nextButton);
 
-  container.appendChild(restartButton());
+  container.appendChild(restartButton(rerenderQuiz));
   container.appendChild(inputGreeting());
 
   return container;

@@ -21,7 +21,9 @@ export const home = () => {
 
   container.appendChild(head_ing);
   container.appendChild(makeInstructions());
-  container.appendChild(restartButton());
+  container.appendChild(restartButton(() => {
+    window.location.href = '/quiz';
+  }));
   container.appendChild(inputGreeting());
 
   return container;
