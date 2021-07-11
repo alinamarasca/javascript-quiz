@@ -15,6 +15,8 @@ const RenderQuiz = (questionIndex) => {
     const checkbox = document.createElement("input");
     checkbox.setAttribute("data-answer-index", answerCounter);
     checkbox.setAttribute("type", "checkbox");
+    checkbox.checked =
+      state.questions[questionIndex].answers[answerCounter].selected;
     checkbox.addEventListener("change", changeAnswer);
     li.insertAdjacentElement("afterbegin", checkbox);
     answers.appendChild(li);
