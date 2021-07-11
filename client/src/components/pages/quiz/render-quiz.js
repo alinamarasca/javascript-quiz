@@ -1,10 +1,9 @@
-import { data } from "../../../../data/quiz.js";
+import { state } from "../../../init/state.js";
 
 const RenderQuiz = (questionIndex) => {
   const quizContainer = document.createElement("div");
-  quizContainer.className = "quiz-container";
   const questions = document.createElement("p");
-  const currentQuestion = data.questions[questionIndex];
+  const currentQuestion = state.questions[questionIndex];
   questions.innerText = currentQuestion.question;
   const answers = document.createElement("ul");
   for (const item of currentQuestion.answers) {
