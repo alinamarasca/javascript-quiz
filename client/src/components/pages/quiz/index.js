@@ -32,7 +32,7 @@ export const quiz = () => {
   const nextButton = NextButton(rerenderQuiz);
   container.appendChild(nextButton);
 
-  container.appendChild(restartButton());
+  container.appendChild(restartButton(rerenderQuiz));
   container.appendChild(inputGreeting());
 
   return container;
