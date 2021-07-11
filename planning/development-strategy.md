@@ -54,6 +54,38 @@
     - [ ] component progress.js: return `<p>` (~'you are at question 3 out of 5', get number from the state, no hard code)
   - [ ] css
   
+  - [ ] a user can see the questions they answered incorrectly
+    - [ ] display all questions that were incorrectly marked and show the correct answer for it.
+    - [ ] separate 'correct-answers'  branch:
+      - [ ] create a new component `correct-answers.js` returns a nested `ul` which shows the incorrectly answered questions with the correct answers nested underneath.
+      - [ ] css
+
+## Could-Haves
+
+> would be really cool ... if there's time
+
+- **Questions Page**
+
+  - [ ] a user see the of questions
+    - [ ] Show a list of questions.
+      - [ ] Create a component `questions.js` return a list `ul` of questions from the `state`
+
+  - [ ] a user can create a new question
+    - [ ] Create a form where the user can submit a new question.
+        - [ ] Create an input field with label for the question
+        - [ ] Create 4 input fields for the possible answers with a checkbox where you can indicate if the answer is a correct answer.
+        - [ ] Create a submit button to save the question with the answers
+    - [ ] Create a handler `add-question.js`
+      - [ ] Append a question according to the schema to the questions in the `state`.
+    - [ ] css
+  
+  - [ ] a user can delete a question
+      - [ ] Add a delete button to the `questions.js` that when clicked removes a message from the list in the `state`.
+        - [ ] A component `delete-button.js`
+            - [ ] Render a `button` that when clicked calls the handler.
+        - [ ] A handler `delete-question.js`
+          - [ ] Removes the question from the list in the state
+
 <!--
 
   These will be the main types of tasks in the quiz project:

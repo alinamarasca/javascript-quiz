@@ -1,5 +1,6 @@
 import { state } from "../../../init/state.js";
-import { changeAnswer } from "../../../handlers/change-answer";
+import { changeAnswer } from "../../../handlers/change-answer.js";
+import { Score } from "./score.js";
 
 const RenderQuiz = (questionIndex) => {
   const quizContainer = document.createElement("div");
@@ -24,6 +25,7 @@ const RenderQuiz = (questionIndex) => {
   }
   quizContainer.appendChild(questions);
   quizContainer.appendChild(answers);
+  quizContainer.appendChild(Score());
   return quizContainer;
 };
 
