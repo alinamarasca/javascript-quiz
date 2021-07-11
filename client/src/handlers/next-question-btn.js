@@ -4,10 +4,10 @@ export const nextQuestionButton = (rerenderQuiz) => {
   state.questions[state.currentQuestion].answered = true;
   state.currentQuestion += 1;
 
-  rerenderQuiz();
-
   const endOfQuiz = state.questions.length;
-  if (state.currentQuestion + 1 === endOfQuiz) {
-    state.currentQuestion = 0;
+  if (state.currentQuestion >= endOfQuiz) {
+    state.currentQuestion = state.questions.length - 1;
   }
+
+  rerenderQuiz();
 };
