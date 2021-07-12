@@ -1,6 +1,5 @@
 import { inputGreeting } from "../../shared/input-greeting.js";
 import { AllQuestions } from "./questions.js";
-import { state } from "../../../init/state.js";
 
 /**
  * The questions page.
