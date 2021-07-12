@@ -75,5 +75,41 @@ export const data = {
         },
       ],
     },
+    {
+      question: 'What does JSON.parse do?',
+      answered: false,
+      answers: [
+        {
+          text: 'Foobar.',
+          correct: false,
+          selected: false,
+        },
+        {
+          text: 'Transforms an object into a JSON string.',
+          correct: false,
+          selected: false,
+        },
+        {
+          text: 'Only validates a JSON object.',
+          correct: false,
+          selected: false,
+        },
+        {
+          text: 'Transforms values to an Array',
+          correct: false,
+          selected: false,
+        },
+      ],
+      links: [
+        {
+          text: 'javascript.info',
+          url: 'https://javascript.info/types#type-typeof',
+        },
+        {
+          text: 'MDN',
+          url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof',
+        },
+      ],
+    },
   ],
 };

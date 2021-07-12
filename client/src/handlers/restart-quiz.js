@@ -17,5 +17,6 @@ export const restartQuiz = () => {
     return defaultQuestion;
   });
 
+  state.currentQuestion = 0;
   state.questions = questions; // overwrite the question in the state with the copied questions that have been modified
   };

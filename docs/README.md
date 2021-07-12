@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+
 <!-- BEGIN TITLE -->
 
 # DOCS
@@ -22,14 +24,25 @@
   - pages
     - home
       - [index.js](#clientsrccomponentspageshomeindexjs)
+      - [instructions.js](#clientsrccomponentspageshomeinstructionsjs)
+      - [number-of-questions.js](#clientsrccomponentspageshomenumber-of-questionsjs)
     - questions
       - [index.js](#clientsrccomponentspagesquestionsindexjs)
     - quiz
+      - [back-btn.js](#clientsrccomponentspagesquizback-btnjs)
       - [index.js](#clientsrccomponentspagesquizindexjs)
+      - [next-btn.js](#clientsrccomponentspagesquiznext-btnjs)
+      - [render-quiz.js](#clientsrccomponentspagesquizrender-quizjs)
+      - [score.js](#clientsrccomponentspagesquizscorejs)
   - shared
     - [input-greeting.js](#clientsrccomponentssharedinput-greetingjs)
+    - [restart-btn.js](#clientsrccomponentssharedrestart-btnjs)
 - handlers
+  - [back-question-btn.js](#clientsrchandlersback-question-btnjs)
+  - [change-answer.js](#clientsrchandlerschange-answerjs)
   - [change-greeting.js](#clientsrchandlerschange-greetingjs)
+  - [next-question-btn.js](#clientsrchandlersnext-question-btnjs)
+  - [restart-quiz.js](#clientsrchandlersrestart-quizjs)
 - init
   - [index.js](#clientsrcinitindexjs)
   - [router.js](#clientsrcinitrouterjs)
@@ -114,6 +127,14 @@ The home page.
 
 </details>
 
+<details><summary><a href="../../client/src/components/pages/home/instructions.js" id="clientsrccomponentspageshomeinstructionsjs">../client/src/components/pages/home/instructions.js</a></summary>
+
+</details>
+
+<details><summary><a href="../../client/src/components/pages/home/number-of-questions.js" id="clientsrccomponentspageshomenumber-of-questionsjs">../client/src/components/pages/home/number-of-questions.js</a></summary>
+
+</details>
+
 ---
 
 ### /questions
@@ -134,6 +155,10 @@ The questions page.
 
 ### /quiz
 
+<details><summary><a href="../../client/src/components/pages/quiz/back-btn.js" id="clientsrccomponentspagesquizback-btnjs">../client/src/components/pages/quiz/back-btn.js</a></summary>
+
+</details>
+
 <details><summary><a href="../../client/src/components/pages/quiz/index.js" id="clientsrccomponentspagesquizindexjs">../client/src/components/pages/quiz/index.js</a></summary>
 
 <a name="quiz"></a>
@@ -143,6 +168,18 @@ The questions page.
 The quiz page.
 
 **Returns**: <code>HTMLDivElement</code> - A rendered quiz page.
+
+</details>
+
+<details><summary><a href="../../client/src/components/pages/quiz/next-btn.js" id="clientsrccomponentspagesquiznext-btnjs">../client/src/components/pages/quiz/next-btn.js</a></summary>
+
+</details>
+
+<details><summary><a href="../../client/src/components/pages/quiz/render-quiz.js" id="clientsrccomponentspagesquizrender-quizjs">../client/src/components/pages/quiz/render-quiz.js</a></summary>
+
+</details>
+
+<details><summary><a href="../../client/src/components/pages/quiz/score.js" id="clientsrccomponentspagesquizscorejs">../client/src/components/pages/quiz/score.js</a></summary>
 
 </details>
 
@@ -156,13 +193,33 @@ The quiz page.
 
 </details>
 
+<details><summary><a href="../../client/src/components/shared/restart-btn.js" id="clientsrccomponentssharedrestart-btnjs">../client/src/components/shared/restart-btn.js</a></summary>
+
+</details>
+
 ---
 
 ---
 
 # /handlers
 
+<details><summary><a href="../../client/src/handlers/back-question-btn.js" id="clientsrchandlersback-question-btnjs">../client/src/handlers/back-question-btn.js</a></summary>
+
+</details>
+
+<details><summary><a href="../../client/src/handlers/change-answer.js" id="clientsrchandlerschange-answerjs">../client/src/handlers/change-answer.js</a></summary>
+
+</details>
+
 <details><summary><a href="../../client/src/handlers/change-greeting.js" id="clientsrchandlerschange-greetingjs">../client/src/handlers/change-greeting.js</a></summary>
+
+</details>
+
+<details><summary><a href="../../client/src/handlers/next-question-btn.js" id="clientsrchandlersnext-question-btnjs">../client/src/handlers/next-question-btn.js</a></summary>
+
+</details>
+
+<details><summary><a href="../../client/src/handlers/restart-quiz.js" id="clientsrchandlersrestart-quizjs">../client/src/handlers/restart-quiz.js</a></summary>
 
 </details>
 
@@ -215,3 +272,5 @@ Defines the route URLs, names and callbacks.
 </details>
 
 <!-- END DOCS -->
+
+> > > > > > > 0f153957da43152a00b334cc3b774101ddba43ef

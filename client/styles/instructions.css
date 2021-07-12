@@ -1,9 +1,9 @@
 .instructions {
-    box-shadow: 1px 10px 15px rgba(131, 125, 120, 0.2);
-    padding: 1.2rem;
-    line-height: 150%;
-    }
-    
+  box-shadow: 1px 10px 15px rgba(131, 125, 120, 0.2);
+  padding: 1.2rem;
+  line-height: 150%;
+}
+
 .instructions h2 {
-    color: rgb(100, 31, 165);
+  color: rgb(100, 31, 165);
 }

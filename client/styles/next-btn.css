@@ -1,4 +1,5 @@
 .next-btn {
+<<<<<<< HEAD
     background-color: rgb(78, 157, 81);
     font-size: 1em;
     padding: 1em;
@@ -13,3 +14,15 @@
     }
 
     
+=======
+  background-color: #c8f383;
+  font-size: 1em;
+  padding: 1em;
+  margin-right: 20px;
+  border: 1px solid black;
+}
+
+.next-btn:hover {
+  background-color: #8dc92d;
+}
+>>>>>>> b8a7f24302f1e6ea4683b489d133bc2551526f70

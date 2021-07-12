@@ -1,13 +1,13 @@
-import { data } from "../../data/quiz.js";
-import { RenderQuiz } from "../components/pages/quiz/render-quiz.js";
+import { state } from "../init/state.js";
 
-export const nextQuestionButton = () => {
-  const parent = document.querySelector(".quiz-container");
-  parent.textContent = "";
-  data.currentQuestion += 1;
-  parent.appendChild(RenderQuiz(data.currentQuestion));
-  const endOfQuiz = data.questions.length;
-  if (data.currentQuestion + 1 === endOfQuiz) {
-    data.currentQuestion = 0;
-}
+export const nextQuestionButton = (rerenderQuiz) => {
+  state.questions[state.currentQuestion].answered = true;
+  state.currentQuestion += 1;
+
+  const endOfQuiz = state.questions.length;
+  if (state.currentQuestion >= endOfQuiz) {
+    state.currentQuestion = state.questions.length - 1;
+  }
+
+  rerenderQuiz();
 };

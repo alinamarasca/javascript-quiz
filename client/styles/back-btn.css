@@ -1,0 +1,11 @@
+.back-btn {
+  background-color: darkgrey;
+  font-size: 1em;
+  padding: 1em;
+  margin-right: 20px;
+  border: 1px solid black;
+}
+
+.back-btn:hover {
+  background-color: #878787;
+}
