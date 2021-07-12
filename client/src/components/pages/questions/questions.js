@@ -2,8 +2,8 @@
 import { state } from "../../../init/state.js";
 
 const AllQuestions = () => {
-  const ol = document.createElement("ol");
-  ol.id = "all-questions";
+  const ulAll = document.createElement("ul");
+  ulAll.id = "all-questions";
   for (let i = 0; i < state.questions.length; i++) {
     const li = document.createElement("li");
     const ul = document.createElement("ul");
@@ -21,9 +21,9 @@ const AllQuestions = () => {
       }
       ul.appendChild(li);
     }
-    ol.appendChild(li);
+    ulAll.appendChild(li);
   }
-  return ol;
+  return ulAll;
 };
 
 export { AllQuestions };
