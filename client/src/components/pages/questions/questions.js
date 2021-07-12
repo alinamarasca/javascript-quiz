@@ -5,9 +5,9 @@ const AllQuestions = () => {
   const ulAll = document.createElement("ul");
   ulAll.id = "all-questions";
   for (let i = 0; i < state.questions.length; i++) {
-    const li = document.createElement("li");
+    const liQuestions = document.createElement("li");
     const ul = document.createElement("ul");
-    li.appendChild(ul);
+    liQuestions.appendChild(ul);
     const p = document.createElement("p");
     p.textContent = state.questions[i].question;
     ul.appendChild(p);
@@ -21,7 +21,7 @@ const AllQuestions = () => {
       }
       ul.appendChild(li);
     }
-    ulAll.appendChild(li);
+    ulAll.appendChild(liQuestions);
   }
   return ulAll;
 };
