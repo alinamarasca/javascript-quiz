@@ -1,4 +1,3 @@
-// import { RenderQuiz } from "../quiz/render-quiz.js";
 import { state } from "../../../init/state.js";
 
 const AllQuestions = () => {
