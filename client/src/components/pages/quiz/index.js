@@ -1,17 +1,9 @@
-<<<<<<< HEAD
-// import { inputGreeting } from "../../shared/input-greeting.js";
-import { restartButton } from "../../shared/restart-btn.js";
-import { RenderQuiz } from "./render-quiz.js";
-import { NextButton } from "./next-btn.js";
-import { data } from "../../../../data/quiz.js";
-=======
 import { RestartButton } from "../../shared/restart-btn.js";
 import { RenderQuiz } from "./render-quiz.js";
 import { NextButton } from "./next-btn.js";
 import { BackButton } from "./back-btn.js";
 import { state } from "../../../init/state.js";
-import { Score } from "./score";
->>>>>>> b8a7f24302f1e6ea4683b489d133bc2551526f70
+import { Score } from "./score.js";
 
 /**
  * The quiz page.
@@ -21,12 +13,6 @@ import { Score } from "./score";
 export const quiz = () => {
   const container = document.createElement("div");
   container.className = "body";
-<<<<<<< HEAD
-  container.appendChild(RenderQuiz(data.currentQuestion));
-  container.appendChild(NextButton());
-  container.appendChild(restartButton());
-  // container.appendChild(inputGreeting());
-=======
 
   const controlsContainer = document.createElement("section");
   const quizContainer = document.createElement("section");
@@ -59,6 +45,5 @@ export const quiz = () => {
 
   container.appendChild(controlsContainer);
 
->>>>>>> b8a7f24302f1e6ea4683b489d133bc2551526f70
   return container;
 };
