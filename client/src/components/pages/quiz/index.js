@@ -11,39 +11,40 @@ import { Score } from "./score.js";
  * @returns {HTMLDivElement} A rendered quiz page.
  */
 export const quiz = () => {
-  const container = document.createElement("div");
-  container.className = "body";
+  const bodyContainer = document.createElement("div");
+  bodyContainer.className = "body";
 
   const controlsContainer = document.createElement("section");
   const quizContainer = document.createElement("section");
 
   quizContainer.id = "quiz-container";
   quizContainer.appendChild(RenderQuiz(state.currentQuestion));
-  container.appendChild(quizContainer);
+  bodyContainer.appendChild(quizContainer);
+
   const rerenderQuiz = () => {
     // Update the quiz after next has been clicked.
     const container = document.getElementById("quiz-container");
     container.innerHTML = "";
     container.appendChild(RenderQuiz(state.currentQuestion));
   };
-  container.appendChild(quizContainer);
+  bodyContainer.appendChild(quizContainer);
 
   const restartButton = RestartButton(() => {
-    container.innerHTML = "";
+    bodyContainer.innerHTML = "";
     controlsContainer.appendChild(restartButton); // I don't understand this
-    container.appendChild(quizContainer);
-    container.appendChild(controlsContainer);
+    bodyContainer.appendChild(quizContainer);
+    bodyContainer.appendChild(controlsContainer);
   });
   controlsContainer.appendChild(BackButton(rerenderQuiz));
   const showScore = () => {
-    container.innerHTML = "";
-    container.appendChild(Score());
-    container.appendChild(restartButton);
+    bodyContainer.innerHTML = "";
+    bodyContainer.appendChild(Score());
+    bodyContainer.appendChild(restartButton);
   };
   controlsContainer.appendChild(NextButton(rerenderQuiz, showScore));
   controlsContainer.appendChild(restartButton);
 
-  container.appendChild(controlsContainer);
+  bodyContainer.appendChild(controlsContainer);
 
-  return container;
+  return bodyContainer;
 };
