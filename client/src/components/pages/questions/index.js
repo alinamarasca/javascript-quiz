@@ -1,4 +1,3 @@
-import { inputGreeting } from "../../shared/input-greeting.js";
 import { AllQuestions } from "./questions.js";
 
 /**
@@ -9,8 +8,7 @@ import { AllQuestions } from "./questions.js";
 export const questions = () => {
   const container = document.createElement("div");
   container.className = "body";
-
-  container.appendChild(inputGreeting());
   container.appendChild(AllQuestions());
   return container;
 };
+

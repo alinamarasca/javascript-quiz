@@ -8,11 +8,20 @@
 
 ul {
   list-style-type: none;
+}
+
+li {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-}
+  box-shadow: 1px 10px 15px rgba(131, 125, 120, 0.2);
+  padding: 1.2rem;
+  line-height: 150%;
+  }
 
 li {
   padding: 0.2rem;
   margin: 0.5rem;
 }
+
+

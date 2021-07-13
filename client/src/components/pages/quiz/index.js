@@ -27,6 +27,7 @@ export const quiz = () => {
     container.innerHTML = "";
     container.appendChild(RenderQuiz(state.currentQuestion));
   };
+
   bodyContainer.appendChild(quizContainer);
 
   const restartButton = RestartButton(() => {
@@ -35,12 +36,15 @@ export const quiz = () => {
     bodyContainer.appendChild(quizContainer);
     bodyContainer.appendChild(controlsContainer);
   });
+
   controlsContainer.appendChild(BackButton(rerenderQuiz));
+
   const showScore = () => {
     bodyContainer.innerHTML = "";
     bodyContainer.appendChild(Score());
     bodyContainer.appendChild(restartButton);
   };
+
   controlsContainer.appendChild(NextButton(rerenderQuiz, showScore));
   controlsContainer.appendChild(restartButton);
 
