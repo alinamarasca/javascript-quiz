@@ -1,8 +1,12 @@
 import { deleteQuestion } from "../../../handlers/delete-question.js";
 
-export const DeleteButton = () => {
+const DeleteButton = () => {
+  const controlDiv = document.createElement("div");
   const button = document.createElement("button");
-  button.innerText = "X";
+  button.id = "delete-question";
   button.addEventListener("click", deleteQuestion);
-  return button;
+  controlDiv.appendChild(button);
+  return controlDiv;
 };
+
+export { DeleteButton }

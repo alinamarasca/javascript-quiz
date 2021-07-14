@@ -3,8 +3,7 @@ import { DeleteButton } from "./delete-button.js";
 
 const AllQuestions = () => {
   const list = document.createElement("section");
-  list.id = "section";
-  
+  list.id = "questions-list";
   const ulAll = document.createElement("ul");
   ulAll.id = "all-questions";
   for (let i = 0; i < state.questions.length; i++) {
@@ -12,7 +11,6 @@ const AllQuestions = () => {
     liQuestions.className = "question";
     liQuestions.setAttribute("data-question-index", i);
     liQuestions.appendChild(DeleteButton());
-    // liQuestions.dataset.index = i;
     const ul = document.createElement("ul");
     liQuestions.appendChild(ul);
     const p = document.createElement("p");
@@ -31,7 +29,6 @@ const AllQuestions = () => {
     ulAll.appendChild(liQuestions);
     list.appendChild(ulAll);
   }
-  // return ulAll;
   return list;
 };
 

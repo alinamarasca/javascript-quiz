@@ -1,0 +1,36 @@
+.correct {
+  border: 0.2em solid #8dc92d;
+}
+
+.incorrect {
+  color: grey;
+}
+
+.question {
+  box-shadow: 1px 10px 15px rgba(131, 125, 120, 0.2);
+  line-height: 150%;
+  display: flex;
+  flex-direction: column;
+  }
+
+li {
+  display:flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0.2rem;
+  margin: 0.2rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  margin:auto;
+  padding: 0;
+  margin: 0;
+}
+
+

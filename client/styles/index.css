@@ -5,4 +5,5 @@
 @import url('./instructions.css');
 @import url("./next-btn.css");
 @import url("./back-btn.css");
-@import url("./all-questions.css");
+@import url("./questions.css");
+@import url("./delete-question.css");
