@@ -1,0 +1,13 @@
+#delete-question {
+    all: unset;
+    color: rgba(226, 43, 43, 0.8);
+    float:right;
+    padding: 1rem;
+}
+
+    #delete-question:before {
+    display: inline-block;
+    content: "\00d7"; 
+    cursor: pointer;
+    font-size: xx-large;
+}

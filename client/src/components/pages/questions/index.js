@@ -1,4 +1,4 @@
-import { inputGreeting } from "../../shared/input-greeting.js";
+import { DeleteButton } from "./delete-button.js";
 import { AllQuestions } from "./questions.js";
 
 /**
@@ -9,8 +9,8 @@ import { AllQuestions } from "./questions.js";
 export const questions = () => {
   const container = document.createElement("div");
   container.className = "body";
-
-  container.appendChild(inputGreeting());
   container.appendChild(AllQuestions());
+  const container1 = document.getElementsByClassName("question");
+  console.log(container1);
   return container;
 };
