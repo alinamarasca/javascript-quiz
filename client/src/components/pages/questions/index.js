@@ -1,4 +1,4 @@
-import { DeleteButton } from "./delete-button.js";
+import { deleteQuestion } from "../../../handlers/delete-question.js";
 import { AllQuestions } from "./questions.js";
 
 /**
@@ -9,8 +9,13 @@ import { AllQuestions } from "./questions.js";
 export const questions = () => {
   const container = document.createElement("div");
   container.className = "body";
-  container.appendChild(AllQuestions());
-  const container1 = document.getElementsByClassName("question");
-  console.log(container1);
+
+  const listContainer = document.createElement("section");
+  listContainer.id = "questions-list";
+  listContainer.addEventListener("click", deleteQuestion);
+  container.appendChild(listContainer);
+
+  listContainer.appendChild(AllQuestions());
+
   return container;
 };

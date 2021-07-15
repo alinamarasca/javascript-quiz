@@ -2,8 +2,6 @@ import { state } from "../../../init/state.js";
 import { DeleteButton } from "./delete-button.js";
 
 const AllQuestions = () => {
-  const list = document.createElement("section");
-  list.id = "questions-list";
   const ulAll = document.createElement("ul");
   ulAll.id = "all-questions";
   for (let i = 0; i < state.questions.length; i++) {
@@ -27,9 +25,8 @@ const AllQuestions = () => {
       ul.appendChild(li);
     }
     ulAll.appendChild(liQuestions);
-    list.appendChild(ulAll);
   }
-  return list;
+  return ulAll;
 };
 
 export { AllQuestions };

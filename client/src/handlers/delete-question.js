@@ -3,9 +3,11 @@ import { state } from "../init/state.js";
 
 export const deleteQuestion = (event) => {
   const { target } = event;
-  const toDelete = target.parentElement.getAttribute("data-question-index");
-  state.questions.splice(toDelete, 1);
-  const section = document.getElementById("questions-list");
-  section.innerHTML = "";
-  section.appendChild(AllQuestions(state.questions));
+  if (event.target.id === "delete-question") {
+    const toDelete = target.parentElement.getAttribute("data-question-index");
+    state.questions.splice(toDelete, 1);
+    const section = document.getElementById("questions-list");
+    section.innerHTML = "";
+    section.appendChild(AllQuestions(state.questions));
+  }
 };
