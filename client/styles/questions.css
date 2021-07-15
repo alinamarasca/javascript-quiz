@@ -6,6 +6,14 @@
   color: grey;
 }
 
+.right-choice {
+  color:green;
+}
+
+.wrong-choice {
+  color:red;
+}
+
 .question {
   box-shadow: 1px 10px 15px rgba(131, 125, 120, 0.2);
   line-height: 150%;
